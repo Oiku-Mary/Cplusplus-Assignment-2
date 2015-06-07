@@ -59,7 +59,7 @@ int main()
         cout<<"what is the birth day?"<<endl;
         cin>> day;
               
-        cout<<"what is the birth year?"<<end|;
+        cout<<"what is the birth year?"<<endl;
         cin>> year; 
 
 
@@ -70,7 +70,7 @@ int main()
         cout<<"what is the current day?"<<endl;
         cin>> currentDay;
               
-        cout<<"what is the current year?"<<end|;
+        cout<<"what is the current year?"<<endl;
         cin>> currentYear; 
     
 
@@ -83,10 +83,10 @@ int main()
 
     
     // Instantiate an object of class HealthProfile - passing relevant values to the constructor
-    HealthProfile healthprofile1 (firstName, lastName, gender, month, day, year, weight, height, currentDay, currentMonth, currentYear);
+    HealthProfile healthprofile1(firstName, lastName, gender, month, day, year, weight, height, currentDay, currentMonth, currentYear );
 
     healthprofile1.setFirstName(firstName);
-    healthprofile1.setLastName(LastName);
+    healthprofile1.setLastName(lastName);
     healthprofile1.setGender(gender);
     healthprofile1.setMonth(month);
     healthprofile1.setDay(day);
@@ -97,9 +97,9 @@ int main()
     healthprofile1.setCurrentMonth(currentMonth);
     healthprofile1.setCurrentYear(currentYear);
 
-    
+
     // Print information from the object - by calling getInformation() function
-    getInformation();
+	healthprofile1.getInformation();
        
     return 0;
 }
